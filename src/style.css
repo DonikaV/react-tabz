@@ -1,0 +1,58 @@
+.l-tabs {
+    padding-top: 7px;
+}
+.l-tabs .l-tabs-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.l-tabs .l-tabs-list .l-tabs-separator {
+    flex-grow: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 28px;
+    margin: 0 5px;
+    border-right: 1px solid grey;
+}
+.l-tabs .l-tabs-list .l-tab {
+    flex-grow: 1;
+    max-height: 40px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    color: green;
+    font-weight: 500;
+}
+.l-tabs .l-tabs-list .l-tab:hover {
+    background-color: #fff;
+}
+.l-tabs .l-tabs-list .l-tab-checked {
+    cursor: default;
+    color: #000;
+}
+.l-tabs .l-tabs-list .l-tab-checked:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -10px;
+    height: 4px;
+    background: green;
+}
+.l-tabs .l-tab-panels {
+    margin-top: 14px;
+}
+.l-tabs .l-tab-panels .l-tab-panel {
+    width: 100%;
+    display: none;
+    flex-basis: auto;
+}
+.l-tabs .l-tab-panels .l-tab-panel-show {
+    display: block;
+}
