@@ -1,6 +1,6 @@
 {
   "name": "react-tabz",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "React Tabs",
   "main": "build/index.js",
   "peerDependencies": {
@@ -24,8 +24,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
