@@ -3,7 +3,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import TabItem from "./TabItem";
 import TabSeparator from "./TabSeparator";
-import '../main.css';
+import style from '../main.css';
 
 export default class Tab extends React.Component {
     constructor(props) {
@@ -26,7 +26,7 @@ export default class Tab extends React.Component {
         if (headingsLength !== childrenLength) {
             throw new Error("You should use same count of headings and children props.");
         }
-        if (!Array.isArray(headings) && !Array.isArray(headings)) {
+        if (!Array.isArray(headings) || !Array.isArray(headings)) {
             throw new Error("Wrong values of props for Tab component");
         }
         if (headingsLength <= 1 || childrenLength <= 1) {
