@@ -26,7 +26,7 @@ export default class Tab extends React.Component {
         if (headingsLength !== childrenLength) {
             throw new Error("You should use same count of headings and children props.");
         }
-        if (!Array.isArray(headings) || !Array.isArray(headings)) {
+        if (!Array.isArray(headings) || !Array.isArray(children)) {
             throw new Error("Wrong values of props for Tab component");
         }
         if (headingsLength <= 1 || childrenLength <= 1) {
