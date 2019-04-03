@@ -11,15 +11,18 @@ import {Tab} from "react-tabz";
 
 const headings = ["First Tab Heading", "Second Tab Heading"];
 
-<Tab headings={headings}>
-     <div>Tab panel content 1</div>
-     <div>Tab panel content 2</div>
+<Tab headings={headings}
+    className="yourClassForTabComponent"
+    tabItemClassName="someClassForContentPanel"
+    tabSeparatorClassName="YourClassNameForTabSeparator">
+        <div /*tabItemClassName class will be here */ >Tab panel content 1</div>
+        <div>Tab panel content 2</div>
 </Tab>
 
 ```
 Tab props
 ```javascript
-static propTypes = {
+Tab.propTypes = {
         headings: PropTypes.arrayOf(PropTypes.string),
         children: PropTypes.arrayOf(PropTypes.element.isRequired),
         className: PropTypes.string,
@@ -31,7 +34,7 @@ static propTypes = {
 ```    
 TabItem props
 ```javascript
-static propTypes = {
+TabItem.propTypes = {
         text: PropTypes.string,
         checked: PropTypes.bool,
         onClick: PropTypes.func,
