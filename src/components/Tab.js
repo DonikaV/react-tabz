@@ -3,7 +3,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import TabItem from "./TabItem";
 import TabSeparator from "./TabSeparator";
-import '../style.css';
+import '../main.css';
 
 export default class Tab extends React.Component {
     constructor(props) {

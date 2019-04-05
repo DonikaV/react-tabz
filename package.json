@@ -1,6 +1,6 @@
 {
   "name": "react-tabz",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "React Tabs",
   "main": "build/index.js",
   "peerDependencies": {
@@ -40,6 +40,7 @@
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.1",
     "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
