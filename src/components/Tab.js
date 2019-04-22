@@ -35,7 +35,7 @@ export default class Tab extends React.Component {
     }
 
     render() {
-        const { headings, children, className, tabItemClassName, tabSeparatorClassName } = this.props;
+        const { headings, children, className, tabItemClassName, tabSeparatorClassName, useSeparator } = this.props;
         const { tabIndex } = this.state;
         return (
             <div className={classNames("l-tabs", className)}>
@@ -51,7 +51,7 @@ export default class Tab extends React.Component {
                                 checked={tabIndex === index}
                                 className={tabItemClassName}
                             />
-                            {(index === 0 || (array.length > index && index < array.length - 1)) &&
+                            {useSeparator && (index === 0 || (array.length > index && index < array.length - 1)) &&
                             <TabSeparator className={tabSeparatorClassName}/>}
                         </React.Fragment>
                     ))}
@@ -75,5 +75,10 @@ Tab.propTypes = {
     className: PropTypes.string,
     tabItemClassName: PropTypes.string,
     tabSeparatorClassName: PropTypes.string,
-    onTabChange: PropTypes.func
+    onTabChange: PropTypes.func,
+    useSeparator: PropTypes.bool,
+};
+
+Tab.defaultProps = {
+    useSeparator: true
 };

@@ -53,4 +53,14 @@ describe('Tab component', () => {
         expect(Wrapper.state('tabIndex')).toBe(0);
     });
 
+    it('Tab component not render TabSeparator', () => {
+        const Wrapper = shallow(
+            <Tab headings={headings} useSeparator={false}
+            >
+                <div>Tab panel content 1</div>
+                <div>Tab panel content 2</div>
+            </Tab>);
+        expect(Wrapper.find("TabSeparator").length).toBe(0);
+    });
+
 });

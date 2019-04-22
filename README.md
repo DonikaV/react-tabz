@@ -18,7 +18,16 @@ const headings = ["First Tab Heading", "Second Tab Heading"];
         <div /*tabItemClassName class will be here */ >Tab panel content 1</div>
         <div>Tab panel content 2</div>
 </Tab>
+```
 
+You can disable separator, in case that you want create it by pure CSS
+
+```javascript
+<Tab headings={headings}
+    useSeparator={false}>
+        <div /*tabItemClassName class will be here */ >Tab panel content 1</div>
+        <div>Tab panel content 2</div>
+</Tab>
 ```
 Tab props
 ```javascript
@@ -45,5 +54,9 @@ TabSeparator props
 ```javascript
 TabSeparator.propTypes = {
     className: PropTypes.string
+};
+
+Tab.defaultProps = {
+    useSeparator: true
 };
 ```
