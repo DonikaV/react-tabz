@@ -1,6 +1,6 @@
 {
   "name": "react-tabz",
-  "version": "1.1.54",
+  "version": "1.1.55",
   "description": "React Tabs",
   "main": "build/index.js",
   "peerDependencies": {
@@ -17,7 +17,7 @@
     "flexbox-tabs"
   ],
   "author": "Donika Valerii",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/DonikaV/react-tabz"
