@@ -1,6 +1,6 @@
 {
   "name": "react-tabz",
-  "version": "1.1.56",
+  "version": "1.1.57",
   "description": "React Tabs",
   "main": "build/index.js",
   "peerDependencies": {
