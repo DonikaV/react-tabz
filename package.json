@@ -16,6 +16,10 @@
     "react-tabs",
     "flexbox-tabs"
   ],
+  "engines": {
+    "npm": "6.12.1",
+    "node": "12.14.1"
+  },
   "author": "Donika Valerii",
   "license": "MIT",
   "repository": {
