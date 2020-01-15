@@ -2,6 +2,9 @@
 
 <img width="200" alt="React Tabz" src="https://user-images.githubusercontent.com/26111842/55259878-2d804180-5267-11e9-9129-c69ade927066.png">
 
+###Demo
+[Link for demo](https://react-tabz-demo.herokuapp.com/)
+
 ## install
 `npm i react-tabz`
 

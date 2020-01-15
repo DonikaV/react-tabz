@@ -1,6 +1,6 @@
 {
   "name": "react-tabz",
-  "version": "1.1.62",
+  "version": "1.1.63",
   "description": "React Tabs",
   "main": "build/index.js",
   "peerDependencies": {
@@ -16,10 +16,6 @@
     "react-tabs",
     "flexbox-tabs"
   ],
-  "engines": {
-    "npm": "6.12.1",
-    "node": "12.14.1"
-  },
   "author": "Donika Valerii",
   "license": "MIT",
   "repository": {
